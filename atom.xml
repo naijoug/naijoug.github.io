@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>naijoug</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://naijoug.com/"/>
+  <updated>2018-04-15T06:36:57.000Z</updated>
+  <id>http://naijoug.com/</id>
+  
+  <author>
+    <name>naijoug</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac Tip&#39;s</title>
+    <link href="http://naijoug.com/2016/01/12/Mac%20Tip-s/"/>
+    <id>http://naijoug.com/2016/01/12/Mac Tip-s/</id>
+    <published>2016-01-12T07:33:06.000Z</published>
+    <updated>2018-04-15T06:36:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;收集整理个人使用&lt;code&gt;Mac&lt;/code&gt;的一些小技巧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tip" scheme="http://naijoug.com/categories/Tip/"/>
+    
+    
+      <category term="Mac" scheme="http://naijoug.com/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo &amp; Pages = Blog</title>
+    <link href="http://naijoug.com/2016/01/11/Hexo%20&amp;%20GitHub%20=%20Blog/"/>
+    <id>http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/</id>
+    <published>2016-01-11T06:30:07.000Z</published>
+    <updated>2018-04-15T07:07:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;是一个快速、简洁且高效的博客框架。在线的&lt;code&gt;Git&lt;/code&gt;仓库(&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;、&lt;a href=&quot;https://coding.net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coding&lt;/a&gt;)都提供了免费的&lt;code&gt;Pages&lt;/code&gt;服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="http://naijoug.com/categories/Tutorial/"/>
+    
+    
+      <category term="Git" scheme="http://naijoug.com/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://naijoug.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Memo</title>
+    <link href="http://naijoug.com/2016/01/09/Git%20Memo/"/>
+    <id>http://naijoug.com/2016/01/09/Git Memo/</id>
+    <published>2016-01-09T07:25:54.000Z</published>
+    <updated>2018-04-15T06:34:35.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;是一款免费开源的分布式版本控制其系统，&lt;code&gt;Git&lt;/code&gt;的&lt;a href=&quot;https://github.com/git/git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;源码&lt;/a&gt;也开源发布在&lt;code&gt;Github&lt;/code&gt;上。之前工作时用过&lt;code&gt;SVN&lt;/code&gt;进行代码管理，每次都要到公司连上公司网络才能进行代码同步确实很麻烦。现在自己个人和公司都使用&lt;code&gt;Git&lt;/code&gt;，分布式版本控制确实在一些方面优于&lt;code&gt;SVN&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Memo" scheme="http://naijoug.com/categories/Memo/"/>
+    
+    
+      <category term="Git" scheme="http://naijoug.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Memo</title>
+    <link href="http://naijoug.com/2016/01/08/Markdown%20Memo/"/>
+    <id>http://naijoug.com/2016/01/08/Markdown Memo/</id>
+    <published>2016-01-08T09:19:13.000Z</published>
+    <updated>2018-04-15T07:05:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Markdown&lt;/code&gt;主要是为了方便写作而生的，编写完之后最终是转化为了&lt;code&gt;HTML&lt;/code&gt;文档，而且也是完全兼容&lt;code&gt;HTML&lt;/code&gt;格式文档，可以插入&lt;code&gt;HTML&lt;/code&gt;格式文档。整理&lt;code&gt;Markdown&lt;/code&gt;常用的标记语法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Memo" scheme="http://naijoug.com/categories/Memo/"/>
+    
+    
+      <category term="Markdown" scheme="http://naijoug.com/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>

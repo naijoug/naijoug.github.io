@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Hexo是一个快速、简洁且高效的博客框架。在线的Git仓库(Github、Coding)都提供了免费的Pages服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。">
+<meta name="keywords" content="Git,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo &amp; Pages = Blog">
+<meta property="og:url" content="http://naijoug.com/2016/01/11/Hexo & GitHub = Blog/index.html">
+<meta property="og:site_name" content="naijoug">
+<meta property="og:description" content="Hexo是一个快速、简洁且高效的博客框架。在线的Git仓库(Github、Coding)都提供了免费的Pages服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-15T07:07:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo &amp; Pages = Blog">
+<meta name="twitter:description" content="Hexo是一个快速、简洁且高效的博客框架。在线的Git仓库(Github、Coding)都提供了免费的Pages服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="https://www.gravatar.com/avatar/86ae36e6b03e024eaba9f1b82877a55d?s=16">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="https://www.gravatar.com/avatar/86ae36e6b03e024eaba9f1b82877a55d?s=192" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="https://www.gravatar.com/avatar/86ae36e6b03e024eaba9f1b82877a55d?s=180">
+          
+        
+    
+    <!-- title -->
+    <title>Hexo &amp; Pages = Blog</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="naijoug" type="application/atom+xml" />
+    
+</head>
+
+<body class="max-width mx-auto px3">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/categories/">Categories</a></li>
+         
+          <li><a href="/tags/">Tags</a></li>
+         
+          <li><a href="https://github.com/naijoug">Projects</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2016/01/12/Mac Tip-s/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/01/09/Git Memo/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&text=Hexo &amp; Pages = Blog"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&is_video=false&description=Hexo &amp; Pages = Blog"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo &amp; Pages = Blog&body=Check out this article: http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&name=Hexo &amp; Pages = Blog&description=&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;是一个快速、简洁且高效的博客框架。在线的&lt;code&gt;Git&lt;/code&gt;仓库(&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;、&lt;a href=&quot;https://coding.net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coding&lt;/a&gt;)都提供了免费的&lt;code&gt;Pages&lt;/code&gt;服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pages"><span class="toc-number">1.</span> <span class="toc-text">Pages</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">2.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Init"><span class="toc-number">2.2.</span> <span class="toc-text">Init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Config"><span class="toc-number">2.3.</span> <span class="toc-text">Config</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Commands"><span class="toc-number">2.4.</span> <span class="toc-text">Commands</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Hexo &amp; Pages = Blog
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">naijoug</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-01-11T06:30:07.000Z" itemprop="datePublished">2016-01-11</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Git/">Git</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架。在线的<code>Git</code>仓库(<a href="https://github.com" target="_blank" rel="external">Github</a>、<a href="https://coding.net" target="_blank" rel="external">Coding</a>)都提供了免费的<code>Pages</code>服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。</p>
+<a id="more"></a>
+<h2 id="Pages"><a href="#Pages" class="headerlink" title="Pages"></a>Pages</h2><blockquote>
+<p>是一个静态网页托管和发布服务，支持个人博客搭建和项目主页搭建等。</p>
+</blockquote>
+<ul>
+<li><a href="https://pages.github.com/" target="_blank" rel="external">GitHub-Pages</a>  : GitHub提供的Pages服务，可能访问速度慢。</li>
+<li><a href="https://coding.net/pages" target="_blank" rel="external">Coding-Pages</a> : Coding提供的Pages服务，国内服务器访问速度快。</li>
+</ul>
+<p>为了提高国内和国外访问速度，可以同时使用两者的Pages服务。搭建完成后Pages访问地址如下：<br>GitHub : <a href="http://naijoug.github.io" target="_blank" rel="external">http://naijoug.github.io</a><br>Coding : <a href="http://naijoug.coding.me" target="_blank" rel="external">http://naijoug.coding.me</a></p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><blockquote>
+<p><code>Hexo</code> : 一个基于<code>Node.js</code>的静态博客网站生成器<br><code>Hexo - Slogan</code> : <code>A fast, simple &amp; powerful blog framework</code>(快速、简洁且高效的博客框架)</p>
+</blockquote>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在电脑中安装了`Hexo`环境(前提: 已经安装`Node`)    </span></div><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<h3 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init     <span class="comment"># 执行 `git clone` 操作，从`github`上下载`Hexo`相关文件、默认皮肤`landscape`。</span></div><div class="line">$ npm intall    <span class="comment"># 安装`hexo`相关的依赖库(`package.json`)</span></div></pre></td></tr></table></figure>
+<p>初始化完成后，大致文件结构说明 :</p>
+<ul>
+<li><strong>_config.yml</strong> : 网站的配置信息，可以自行修改</li>
+<li><strong>package.json</strong> : 安装的依赖包插件信息，当安装其它插件之后也会添加到里面</li>
+<li><strong>node_modules</strong> : 安装的依赖库和相关插件在里面</li>
+<li><strong>public</strong> : 执行 <code>hexo generate</code> 操作生成的静态网页文件在在个文件夹下</li>
+<li><p><strong>scaffolds</strong> : 模板文件夹,新建文章时使用，默认使用 <code>post.md</code></p>
+</li>
+<li><p><strong>source</strong> : 网站资源文件夹</p>
+<ul>
+<li><code>_posts</code> : 新建的文章会在 <code>_posts</code> 文件夹下</li>
+<li><code>_drafts</code> : 草稿文件夹，没完成的文章可以放在里面，不会被生成的博客文章列表中</li>
+<li>除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略</li>
+</ul>
+</li>
+<li><p><strong>themes</strong> : 主题文件夹，安装新的皮肤之后会出现在这个文件夹下</p>
+</li>
+<li><strong>.deploy_git</strong> : 部署隐藏文件夹，当执行 <code>hexo deploy</code> 操作时，先清空<code>.deploy_git</code>文件夹，然后将<code>public</code>文件夹中生成的静态网页文件拷贝到本文件夹，最后将当中文件<code>push</code>到<code>GitHub</code>上。</li>
+</ul>
+<h3 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h3><ul>
+<li><p><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">hexo-docs</a> : 官方文档</p>
+</li>
+<li><p><code>_config.yml</code> : 配置文件</p>
+<ul>
+<li><code>langage</code> : 网站使用的语言，简体中文应该使用<code>zh-Hans</code>  </li>
+<li><code>timezone</code> : 网站时区，中国应该使用<code>Asian/Shanghai</code>  </li>
+<li><p><code>deploy</code> : 部署设置，使用<code>GitHub</code>和<code>Coding</code>是部署到git上  </p>
+  <figure class="highlight bash"><figcaption><span>Blog/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//方法一 :</div><div class="line">    deploy:  </div><div class="line">    <span class="built_in">type</span>: git  </div><div class="line">    repo:   </div><div class="line">	   github: git@github.com:naijoug/naijoug.github.io.git,master  </div><div class="line">	   coding: git@coding.net:naijoug/naijoug.git,coding-pages</div><div class="line">//方法二 : </div><div class="line">	deploy:   </div><div class="line">	   - <span class="built_in">type</span>: git  </div><div class="line">		  repo: git@github.com:naijoug/naijoug.github.io.git  </div><div class="line">	   branch: master</div><div class="line">	   - <span class="built_in">type</span>: git  </div><div class="line">		  repo: git@coding.net:naijoug/naijoug.git  </div><div class="line">	   branch: coding-pages</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><a href="https://hexo.io/themes" target="_blank" rel="external">Themes</a> : 皮肤专区</p>
+</li>
+<li><a href="https://hexo.io/plugins" target="_blank" rel="external">Plugins</a> : 插件专区</li>
+</ul>
+<h3 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 写文章</span></div><div class="line">$ hexo new name        <span class="comment"># 通过`scaffolds/post.md`模板,新建文章到默认布局(post : source/_posts),文章名字有空格需要用`“”`</span></div><div class="line">$ hexo new post name   <span class="comment"># 同上</span></div><div class="line">$ hexo new draft name  <span class="comment"># 通过`scaffolds/draft.md`模板,新建文章到草稿布局(draft : source/draft)</span></div><div class="line">$ hexo new page name   <span class="comment"># 通过`scaffolds/page.md`模板,新建页面(page : source)</span></div><div class="line"><span class="comment"># 发布文章</span></div><div class="line">$ hexo publish draft name  <span class="comment"># 发布草稿布局(draft)中的文章到post</span></div><div class="line"><span class="comment"># 生成网页</span></div><div class="line">$ hexo generate         <span class="comment"># 就是将相关 `.md` 文件转化为了`HTML`网页文件，会将静态文件生成到 `public` 文件夹下。</span></div><div class="line"><span class="comment"># 启动网站</span></div><div class="line">$ hexo server           <span class="comment"># 默认本地启动网站, http://localhost:4000</span></div><div class="line">$ hexo server -p 5000   <span class="comment"># 指定端口启动网站</span></div><div class="line"><span class="comment"># 部署网站</span></div><div class="line">$ hexo deploy           <span class="comment"># 就是将 `.deploy_git` 文件夹的网页文件，通过命令 `git push` 部署到GitHub和Coding上。</span></div><div class="line"><span class="comment"># 其它命令</span></div><div class="line">$ hexo clean            <span class="comment"># 清除缓存,清除`db.json` &amp; `public\`文件夹下生成的静态文件</span></div><div class="line">$ hexo list             <span class="comment"># 列出网站资料</span></div><div class="line">$ hexo version          <span class="comment"># 查看hexo当前版本</span></div></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/categories/">Categories</a></li>
+         
+          <li><a href="/tags/">Tags</a></li>
+         
+          <li><a href="https://github.com/naijoug">Projects</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pages"><span class="toc-number">1.</span> <span class="toc-text">Pages</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">2.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Init"><span class="toc-number">2.2.</span> <span class="toc-text">Init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Config"><span class="toc-number">2.3.</span> <span class="toc-text">Config</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Commands"><span class="toc-number">2.4.</span> <span class="toc-text">Commands</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&text=Hexo &amp; Pages = Blog"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&is_video=false&description=Hexo &amp; Pages = Blog"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo &amp; Pages = Blog&body=Check out this article: http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&title=Hexo &amp; Pages = Blog"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/&name=Hexo &amp; Pages = Blog&description=&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;是一个快速、简洁且高效的博客框架。在线的&lt;code&gt;Git&lt;/code&gt;仓库(&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;、&lt;a href=&quot;https://coding.net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coding&lt;/a&gt;)都提供了免费的&lt;code&gt;Pages&lt;/code&gt;服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 naijoug
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="/categories/">Categories</a></li>
+         
+          <li><a href="/tags/">Tags</a></li>
+         
+          <li><a href="https://github.com/naijoug">Projects</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+  <script src="/js/search.js"></script>
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input");
+    var $resultArea = $("#search-result");
+
+    inputArea.onfocus = function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    }
+
+    inputArea.onkeydown = function(){
+        if(event.keyCode==13){
+            return false
+        }
+    }
+
+    $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
+        if (!$(e.target).text()) {
+            $(".search-no-result").show(200);
+        } else {
+            $(".search-no-result").hide();
+        }
+    })
+  </script>
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'naijoug';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+

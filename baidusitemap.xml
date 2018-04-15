@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://naijoug.com/2016/01/11/Hexo%20&%20GitHub%20=%20Blog/</loc>
+    <lastmod>2018-04-15T07:07:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo & Pages = Blog</title>
+        <pubTime>2016-01-11T06:30:07.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tutorial" url="http://naijoug.com/categories/Tutorial/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://naijoug.com/2016/01/08/Markdown%20Memo/</loc>
+    <lastmod>2018-04-15T07:05:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown Memo</title>
+        <pubTime>2016-01-08T09:19:13.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="Memo" url="http://naijoug.com/categories/Memo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://naijoug.com/2016/01/12/Mac%20Tip-s/</loc>
+    <lastmod>2018-04-15T06:36:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac Tip's</title>
+        <pubTime>2016-01-12T07:33:06.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tip" url="http://naijoug.com/categories/Tip/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://naijoug.com/2016/01/09/Git%20Memo/</loc>
+    <lastmod>2018-04-15T06:34:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git Memo</title>
+        <pubTime>2016-01-09T07:25:54.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Memo" url="http://naijoug.com/categories/Memo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+    
+</urlset>

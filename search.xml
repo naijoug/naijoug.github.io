@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Mac Tip's]]></title>
+    <url>%2F2016%2F01%2F12%2FMac%20Tip-s%2F</url>
+    <content type="text"><![CDATA[收集整理个人使用Mac的一些小技巧。 Mac显示隐藏文件在Mac上显示和隐藏文件必须通过命令行进行操作。需要注意的是通过命令行输入后，需要重启一下Finder才能生效。 123456# 显示Mac隐藏文件的命令$ defaults write com.apple.finder AppleShowAllFiles -bool true$ defaults write com.apple.finder AppleShowAllFiles YES# 隐藏Mac隐藏文件的命令$ defaults write com.apple.finder AppleShowAllFiles -bool false$ defaults write com.apple.finder AppleShowAllFiles NO Mac截图在Mac上截图有很多中方法，都包括截图的基本功能（窗口截图、屏幕截图、选择截图）。 系统自带小工具：抓图 用法 : 可以通过Spotlight搜索抓图即可打开。比较特别的是包括一个倒计时10秒截图的功能， 缺点 : 需要打开软件才可以进行截图操作，没有全局的快捷键，所以平时使用比较少。 QQ自带的截图功能 用法 : QQ的截图的必要条件当然时必须打开QQ，当然一般情况下QQ都是登录状态的，所以使用还是比较方便的。 缺点 : 在无网络情况下不能登录QQ，就无法使用。 快捷键截图：Command + Shift + 4 用法 : 系统自带的快捷键截图，通过空格键可以进行窗口模式和自定义区域模式切换，截图完成之后自动保存在桌面。(快捷键Command + Shift + Control + 4将自动保存在剪切板。) 缺点 : 没有取消功能，截图完成之后就直接保存到桌面或剪切板。 设置Mac的默认打开程序Mac设置默认打开程序的方法如下：选中要打开文件 -&gt; 右键 -&gt; 显示简介 -&gt; 打开方式 Mac文本编辑器”直引号”会变“弯引号”Word、Pages、备忘录，使用英文引号&quot;&quot;(直引号)，可是打出却变为了“”(弯引号)。这几个文本编辑软件都默认打开智能替换的功能，手动进行关闭就行了。 Word : 偏好设置 -&gt; 自动更正 -&gt; 键入时自动套用格式 -&gt; &quot;直引号&quot;替换为“弯引号”(去掉选择对号) Pages、备忘录 : 编辑 -&gt; 替换 -&gt; 智能引号(去掉选择对号) Apple提供的编辑软件Pages和备忘录，都是默认开启了智能替换功能，包括：智能引号、智能破折号、智能链接… 智能引号 : 就是将&quot;&quot;(直引号)转化为“”(弯引号) 智能破折号 : 当输入多个破折号-时，会将多个破折号连成一条长破折号 智能链接 : 把网址复制到文本中时，会自动转化为超链接 …]]></content>
+      <categories>
+        <category>Tip</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo & Pages = Blog]]></title>
+    <url>%2F2016%2F01%2F11%2FHexo%20%26%20GitHub%20%3D%20Blog%2F</url>
+    <content type="text"><![CDATA[Hexo是一个快速、简洁且高效的博客框架。在线的Git仓库(Github、Coding)都提供了免费的Pages服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。 Pages 是一个静态网页托管和发布服务，支持个人博客搭建和项目主页搭建等。 GitHub-Pages : GitHub提供的Pages服务，可能访问速度慢。 Coding-Pages : Coding提供的Pages服务，国内服务器访问速度快。 为了提高国内和国外访问速度，可以同时使用两者的Pages服务。搭建完成后Pages访问地址如下：GitHub : http://naijoug.github.ioCoding : http://naijoug.coding.me Hexo Hexo : 一个基于Node.js的静态博客网站生成器Hexo - Slogan : A fast, simple &amp; powerful blog framework(快速、简洁且高效的博客框架) Install12# 在电脑中安装了`Hexo`环境(前提: 已经安装`Node`) $ npm install -g hexo-cli Init12$ hexo init # 执行 `git clone` 操作，从`github`上下载`Hexo`相关文件、默认皮肤`landscape`。$ npm intall # 安装`hexo`相关的依赖库(`package.json`) 初始化完成后，大致文件结构说明 : _config.yml : 网站的配置信息，可以自行修改 package.json : 安装的依赖包插件信息，当安装其它插件之后也会添加到里面 node_modules : 安装的依赖库和相关插件在里面 public : 执行 hexo generate 操作生成的静态网页文件在在个文件夹下 scaffolds : 模板文件夹,新建文章时使用，默认使用 post.md source : 网站资源文件夹 _posts : 新建的文章会在 _posts 文件夹下 _drafts : 草稿文件夹，没完成的文章可以放在里面，不会被生成的博客文章列表中 除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略 themes : 主题文件夹，安装新的皮肤之后会出现在这个文件夹下 .deploy_git : 部署隐藏文件夹，当执行 hexo deploy 操作时，先清空.deploy_git文件夹，然后将public文件夹中生成的静态网页文件拷贝到本文件夹，最后将当中文件push到GitHub上。 Config hexo-docs : 官方文档 _config.yml : 配置文件 langage : 网站使用的语言，简体中文应该使用zh-Hans timezone : 网站时区，中国应该使用Asian/Shanghai deploy : 部署设置，使用GitHub和Coding是部署到git上 Blog/_config.yml1234567891011121314//方法一 : deploy: type: git repo: github: git@github.com:naijoug/naijoug.github.io.git,master coding: git@coding.net:naijoug/naijoug.git,coding-pages//方法二 : deploy: - type: git repo: git@github.com:naijoug/naijoug.github.io.git branch: master - type: git repo: git@coding.net:naijoug/naijoug.git branch: coding-pages Themes : 皮肤专区 Plugins : 插件专区 Commands123456789101112131415161718# 写文章$ hexo new name # 通过`scaffolds/post.md`模板,新建文章到默认布局(post : source/_posts),文章名字有空格需要用`“”`$ hexo new post name # 同上$ hexo new draft name # 通过`scaffolds/draft.md`模板,新建文章到草稿布局(draft : source/draft)$ hexo new page name # 通过`scaffolds/page.md`模板,新建页面(page : source)# 发布文章$ hexo publish draft name # 发布草稿布局(draft)中的文章到post# 生成网页$ hexo generate # 就是将相关 `.md` 文件转化为了`HTML`网页文件，会将静态文件生成到 `public` 文件夹下。# 启动网站$ hexo server # 默认本地启动网站, http://localhost:4000$ hexo server -p 5000 # 指定端口启动网站# 部署网站$ hexo deploy # 就是将 `.deploy_git` 文件夹的网页文件，通过命令 `git push` 部署到GitHub和Coding上。# 其它命令$ hexo clean # 清除缓存,清除`db.json` &amp; `public\`文件夹下生成的静态文件$ hexo list # 列出网站资料$ hexo version # 查看hexo当前版本]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git Memo]]></title>
+    <url>%2F2016%2F01%2F09%2FGit%20Memo%2F</url>
+    <content type="text"><![CDATA[Git是一款免费开源的分布式版本控制其系统，Git的源码也开源发布在Github上。之前工作时用过SVN进行代码管理，每次都要到公司连上公司网络才能进行代码同步确实很麻烦。现在自己个人和公司都使用Git，分布式版本控制确实在一些方面优于SVN。 Reference Git Pro电子书 廖雪峰的Git教程 Commands整理一些常用的Git命令。 1234567891011121314151617181920$ git init # 初始化$ git status # 检查当前文件的状态$ git add . # 添加所有新增文件 (= git add --all)$ git add [file] # 添加指定文件$ git commit -m "comment" # 提交修改内容$ git commit -a -m "comment" # 添加和提交两步的简写。$ git rm [file] # 删除文件$ git diff # 查看文件修改内容$ git log # 查看提交历史$ git clone [url] # 将服务器上的项目拷贝到本地$ git checkout -b [branch] # 新建分支，并切换到该分支。(= git branch [branch] &amp; checkout branch [branch])。# 远程操作$ git remote -V # 显示添加的远程地址$ git remote add origin [url] # 添加名为origin远程地址$ git remote remove origin # 删除名为origin远程地址$ git remote rename origin test # 将origin重命名为test$ git push origin # 上传默认分支(master)到服务器$ git push origin [branch] # 上传指定分支到服务器$ git pull origin # 下载服务器到默认分支(master)$ git pull origin [branch] # 下载服务器到指定分支]]></content>
+      <categories>
+        <category>Memo</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown Memo]]></title>
+    <url>%2F2016%2F01%2F08%2FMarkdown%20Memo%2F</url>
+    <content type="text"><![CDATA[Markdown主要是为了方便写作而生的，编写完之后最终是转化为了HTML文档，而且也是完全兼容HTML格式文档，可以插入HTML格式文档。整理Markdown常用的标记语法。 Reference Markdown官网语法 Markdown中文网 Markdown标记Block (块区元素) 换行符 : 在行尾输入两个以上空格 标题 Setext形式 : ====、---- atx形式 : # 标题1、## 标题2、### 标题3… 引用 : &gt; 引用文本 (区块引用可以嵌套使用其他Markdown的标记。) 分割线 : 三个以上的星号、减号、底线（中间可以插入空格） ****、----、- - -、____ 列表 无序列表 : *、+、- 有序列表 : 1.、2.、3.… 代码区块 : 代码区块需要使用4个空格或者1个Tab制表符就可以。 代码块 : 通过符号```首尾包含即可，还可以设置代码语言、描述、链接地址。 ``` [代码语言] [代码描述(文件名、位置…)] [链接地址] [链接描述] `code` ``` 表格 : 表格标题需要用|分隔线分割，第二行需要(至少一个)|分割线，内容区域分割线与标题区域对应即可。 对齐方式 : 通过第二行控制 左对齐(默认) : :-、:--- 居中 : :、:-:、:---: 右对齐 : -:、---: 示例 123456789101112131415161718// 写法一： One | Two | Three --- | --- | --- T1(0,0) | T1(0,1) | T1(0,2) T1(1,0) | T1(1,1) | T1(1,2) T1(2,0) | T1(2,1) | T1(2,2)// 写法二： | One | Two | Three | | --- | --- | --- | | T2(0,0) | T2(0,1) | T2(0,2) | | T2(1,0) | T2(1,1) | T2(1,2) | | T2(2,0) | T2(2,1) | T2(2,2) |// 写法三：格式简洁、清晰（推荐） One | Two | Three :--- | :---: | ---: T3(0,0) | T3(0,1) | T3(0,2) T3(1,0) | T3(1,1) | T3(1,2) T3(2,0) | T3(2,1) | T3(2,2) One Two Three T1(0,0) T1(0,1) T1(0,2) T1(1,0) T1(1,1) T1(1,2) T1(2,0) T1(2,1) T1(2,2) One Two Three T2(0,0) T2(0,1) T2(0,2) T2(1,0) T2(1,1) T2(1,2) T2(2,0) T2(2,1) T2(2,2) One Two Three T3(0,0) T3(0,1) T3(0,2) T3(1,0) T3(1,1) T3(1,2) T3(2,0) T3(2,1) T3(2,2) Span (行内元素) 强调：**文本** 斜体：*文本* 删除线：~~文本~~ 内嵌代码：`代码` 链接：[显示文本](链接地址) 图片：![图片文本](图片地址) Email：&lt;mail@mail.com&gt; 其它元素 自动链接：&lt;链接地址&gt; 脚注：在文文本中插入脚注[^n],文章结尾脚注格式[^n]:脚注内容 反斜杠：用于展示Markdown中已定义的标记\标记符号 锚点：插入锚点[锚点描述](#锚点名) ，在锚点要跳转的地方插入## [锚点文本](id:锚点名) Markdown编辑器Mac MWeb Mou MacDown Windows MarkdownPad Online MaHua 简书 Cmd Markdown]]></content>
+      <categories>
+        <category>Memo</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+</search>
