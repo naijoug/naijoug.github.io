@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://naijoug.com/"/>
-  <updated>2018-04-15T06:36:57.000Z</updated>
+  <updated>2018-05-22T14:03:21.000Z</updated>
   <id>http://naijoug.com/</id>
   
   <author>
@@ -17,31 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Mac Tip&#39;s</title>
-    <link href="http://naijoug.com/2016/01/12/Mac%20Tip-s/"/>
-    <id>http://naijoug.com/2016/01/12/Mac Tip-s/</id>
-    <published>2016-01-12T07:33:06.000Z</published>
-    <updated>2018-04-15T06:36:57.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;收集整理个人使用&lt;code&gt;Mac&lt;/code&gt;的一些小技巧。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tip" scheme="http://naijoug.com/categories/Tip/"/>
-    
-    
-      <category term="Mac" scheme="http://naijoug.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo &amp; Pages = Blog</title>
-    <link href="http://naijoug.com/2016/01/11/Hexo%20&amp;%20GitHub%20=%20Blog/"/>
-    <id>http://naijoug.com/2016/01/11/Hexo &amp; GitHub = Blog/</id>
+    <link href="http://naijoug.com/2016/01/11/Hexo-&amp;-GitHub-=-Blog/"/>
+    <id>http://naijoug.com/2016/01/11/Hexo-&amp;-GitHub-=-Blog/</id>
     <published>2016-01-11T06:30:07.000Z</published>
-    <updated>2018-04-15T07:07:45.000Z</updated>
+    <updated>2018-05-22T14:03:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架。在线的<code>Git</code>仓库(<a href="https://github.com" target="_blank" rel="external">Github</a>、<a href="https://coding.net" target="_blank" rel="external">Coding</a>)都提供了免费的<code>Pages</code>服务(静态网页托管和发布服务)。两者结合可以迅速的搭建个人站，简略记录一下大致流程。</p><a id="more"></a><h2 id="Pages"><a href="#Pages" class="headerlink" title="Pages"></a>Pages</h2><blockquote><p>是一个静态网页托管和发布服务，支持个人博客搭建和项目主页搭建等。</p></blockquote><ul><li><a href="https://pages.github.com/" target="_blank" rel="external">GitHub-Pages</a>  : GitHub提供的Pages服务，可能访问速度慢。</li><li><a href="https://coding.net/pages" target="_blank" rel="external">Coding-Pages</a> : Coding提供的Pages服务，国内服务器访问速度快。</li></ul><p>为了提高国内和国外访问速度，可以同时使用两者的Pages服务。搭建完成后Pages访问地址如下：<br>GitHub : <a href="http://naijoug.github.io" target="_blank" rel="external">http://naijoug.github.io</a><br>Coding : <a href="http://naijoug.coding.me" target="_blank" rel="external">http://naijoug.coding.me</a></p><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><blockquote><p><code>Hexo</code> : 一个基于<code>Node.js</code>的静态博客网站生成器<br><code>Hexo - Slogan</code> : <code>A fast, simple &amp; powerful blog framework</code>(快速、简洁且高效的博客框架)</p></blockquote><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 在电脑中安装了`Hexo`环境(前提: 已经安装`Node`)    </span></div><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure><h3 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo init     <span class="comment"># 执行 `git clone` 操作，从`github`上下载`Hexo`相关文件、默认皮肤`landscape`。</span></div><div class="line">$ npm intall    <span class="comment"># 安装`hexo`相关的依赖库(`package.json`)</span></div></pre></td></tr></table></figure><p>初始化完成后，大致文件结构说明 :</p><ul><li><strong>_config.yml</strong> : 网站的配置信息，可以自行修改</li><li><strong>package.json</strong> : 安装的依赖包插件信息，当安装其它插件之后也会添加到里面</li><li><strong>node_modules</strong> : 安装的依赖库和相关插件在里面</li><li><strong>public</strong> : 执行 <code>hexo generate</code> 操作生成的静态网页文件在在个文件夹下</li><li><p><strong>scaffolds</strong> : 模板文件夹,新建文章时使用，默认使用 <code>post.md</code></p></li><li><p><strong>source</strong> : 网站资源文件夹</p><ul><li><code>_posts</code> : 新建的文章会在 <code>_posts</code> 文件夹下</li><li><code>_drafts</code> : 草稿文件夹，没完成的文章可以放在里面，不会被生成的博客文章列表中</li><li>除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略</li></ul></li><li><p><strong>themes</strong> : 主题文件夹，安装新的皮肤之后会出现在这个文件夹下</p></li><li><strong>.deploy_git</strong> : 部署隐藏文件夹，当执行 <code>hexo deploy</code> 操作时，先清空<code>.deploy_git</code>文件夹，然后将<code>public</code>文件夹中生成的静态网页文件拷贝到本文件夹，最后将当中文件<code>push</code>到<code>GitHub</code>上。</li></ul><h3 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h3><ul><li><p><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">hexo-docs</a> : 官方文档</p></li><li><p><code>_config.yml</code> : 配置文件</p><ul><li><code>langage</code> : 网站使用的语言，简体中文应该使用<code>zh-Hans</code>  </li><li><code>timezone</code> : 网站时区，中国应该使用<code>Asian/Shanghai</code>  </li><li><p><code>deploy</code> : 部署设置，使用<code>GitHub</code>和<code>Coding</code>是部署到git上  </p>  <figure class="highlight bash"><figcaption><span>Blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><div class="line">//方法一 :</div><div class="line">    deploy:  </div><div class="line">    <span class="built_in">type</span>: git  </div><div class="line">    repo:   </div><div class="line">   github: git@github.com:naijoug/naijoug.github.io.git,master  </div><div class="line">   coding: git@coding.net:naijoug/naijoug.git,coding-pages</div><div class="line">//方法二 : </div><div class="line">deploy:   </div><div class="line">   - <span class="built_in">type</span>: git  </div><div class="line">  repo: git@github.com:naijoug/naijoug.github.io.git  </div><div class="line">   branch: master</div><div class="line">   - <span class="built_in">type</span>: git  </div><div class="line">  repo: git@coding.net:naijoug/naijoug.git  </div><div class="line">   branch: coding-pages</div></pre></td></tr></table></figure></li></ul></li><li><p><a href="https://hexo.io/themes" target="_blank" rel="external">Themes</a> : 皮肤专区</p></li><li><a href="https://hexo.io/plugins" target="_blank" rel="external">Plugins</a> : 插件专区</li></ul><h3 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 写文章</span></div><div class="line">$ hexo new name        <span class="comment"># 通过`scaffolds/post.md`模板,新建文章到默认布局(post : source/_posts),文章名字有空格需要用`“”`</span></div><div class="line">$ hexo new post name   <span class="comment"># 同上</span></div><div class="line">$ hexo new draft name  <span class="comment"># 通过`scaffolds/draft.md`模板,新建文章到草稿布局(draft : source/draft)</span></div><div class="line">$ hexo new page name   <span class="comment"># 通过`scaffolds/page.md`模板,新建页面(page : source)</span></div><div class="line"><span class="comment"># 发布文章</span></div><div class="line">$ hexo publish draft name  <span class="comment"># 发布草稿布局(draft)中的文章到post</span></div><div class="line"><span class="comment"># 生成网页</span></div><div class="line">$ hexo generate         <span class="comment"># 就是将相关 `.md` 文件转化为了`HTML`网页文件，会将静态文件生成到 `public` 文件夹下。</span></div><div class="line"><span class="comment"># 启动网站</span></div><div class="line">$ hexo server           <span class="comment"># 默认本地启动网站, http://localhost:4000</span></div><div class="line">$ hexo server -p 5000   <span class="comment"># 指定端口启动网站</span></div><div class="line"><span class="comment"># 部署网站</span></div><div class="line">$ hexo deploy           <span class="comment"># 就是将 `.deploy_git` 文件夹的网页文件，通过命令 `git push` 部署到GitHub和Coding上。</span></div><div class="line"><span class="comment"># 其它命令</span></div><div class="line">$ hexo clean            <span class="comment"># 清除缓存,清除`db.json` &amp; `public\`文件夹下生成的静态文件</span></div><div class="line">$ hexo list             <span class="comment"># 列出网站资料</span></div><div class="line">$ hexo version          <span class="comment"># 查看hexo当前版本</span></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -52,49 +34,31 @@
       <category term="Tutorial" scheme="http://naijoug.com/categories/Tutorial/"/>
     
     
-      <category term="Git" scheme="http://naijoug.com/tags/Git/"/>
-    
       <category term="Hexo" scheme="http://naijoug.com/tags/Hexo/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Git Memo</title>
-    <link href="http://naijoug.com/2016/01/09/Git%20Memo/"/>
-    <id>http://naijoug.com/2016/01/09/Git Memo/</id>
-    <published>2016-01-09T07:25:54.000Z</published>
-    <updated>2018-04-15T06:34:35.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;是一款免费开源的分布式版本控制其系统，&lt;code&gt;Git&lt;/code&gt;的&lt;a href=&quot;https://github.com/git/git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;源码&lt;/a&gt;也开源发布在&lt;code&gt;Github&lt;/code&gt;上。之前工作时用过&lt;code&gt;SVN&lt;/code&gt;进行代码管理，每次都要到公司连上公司网络才能进行代码同步确实很麻烦。现在自己个人和公司都使用&lt;code&gt;Git&lt;/code&gt;，分布式版本控制确实在一些方面优于&lt;code&gt;SVN&lt;/code&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Memo" scheme="http://naijoug.com/categories/Memo/"/>
-    
-    
       <category term="Git" scheme="http://naijoug.com/tags/Git/"/>
     
   </entry>
   
   <entry>
-    <title>Markdown Memo</title>
-    <link href="http://naijoug.com/2016/01/08/Markdown%20Memo/"/>
-    <id>http://naijoug.com/2016/01/08/Markdown Memo/</id>
-    <published>2016-01-08T09:19:13.000Z</published>
-    <updated>2018-04-15T07:05:18.000Z</updated>
+    <title>Hello world!</title>
+    <link href="http://naijoug.com/2016/01/01/Hello-world/"/>
+    <id>http://naijoug.com/2016/01/01/Hello-world/</id>
+    <published>2016-01-01T08:20:42.000Z</published>
+    <updated>2018-05-22T14:03:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>写一写，各种语言的“Hello world!”。</p><a id="more"></a><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><a href="https://learnxinyminutes.com/" target="_blank" rel="external">Learn X in Y minutes</a></li></ul><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><figure class="highlight c"><figcaption><span>helloword.c</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"Hello world!\n"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ gcc helloworld.c          <span class="comment"># 编译&amp;链接.c文件</span></div><div class="line">$ ./a.out                   <span class="comment"># 运行可执行文件a.out</span></div></pre></td></tr></table></figure><h2 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h2><figure class="highlight cpp"><figcaption><span>helloworld.cpp</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello world!\n"</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ g++ helloworld.cpp        <span class="comment"># 编译&amp;链接.cpp文件</span></div><div class="line">$ ./a.out                   <span class="comment"># 运行可执行文件a.out</span></div></pre></td></tr></table></figure><h2 id="Objective-C"><a href="#Objective-C" class="headerlink" title="Objective-C"></a>Objective-C</h2><figure class="highlight objc"><figcaption><span>HelloWorld.m</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;NSFoundation/NSFoundation.h&gt;</span></span></div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> * argv[]) &#123; </div><div class="line">    <span class="keyword">@autoreleasepool</span> &#123;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"Hello world!"</span>);</div><div class="line">&#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ gcc HelloWorld.m          <span class="comment"># 编译&amp;链接.m文件</span></div><div class="line">$ ./a.out                   <span class="comment"># 运行可执行文件a.out</span></div></pre></td></tr></table></figure><h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><figure class="highlight swift"><figcaption><span>HelloWorld.swift</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> Foundation</div><div class="line"><span class="built_in">print</span>(<span class="string">"Hello world!"</span>)</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ swfitc HelloWorld.swift   <span class="comment"># 编译&amp;链接.swift文件</span></div><div class="line">$ ./HelloWorld              <span class="comment"># 运行可执行文件HelloWorld</span></div></pre></td></tr></table></figure><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><figure class="highlight java"><figcaption><span>HelloWorld.java</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123; </div><div class="line">        System.out.println(<span class="string">"Hello world!"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ javac Helloworld.java         <span class="comment"># 编译java文件(生成class文件)</span></div><div class="line">$ java Helloworld               <span class="comment"># 运行</span></div></pre></td></tr></table></figure><h2 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h2><figure class="highlight go"><figcaption><span>helloworld.go</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="keyword">package</span> main</div><div class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line">    fmt.Println(<span class="string">"Hello world!"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ go run helloworld.go          <span class="comment"># 运行.go文件</span></div></pre></td></tr></table></figure><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><figcaption><span>python2</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/python</span></div><div class="line"><span class="keyword">print</span> <span class="string">"Hello world!"</span></div></pre></td></tr></table></figure><figure class="highlight python"><figcaption><span>python3</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/python3</span></div><div class="line">print(<span class="string">"Hello world!"</span>)</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ python helloworld.py          <span class="comment"># 运行.py文件</span></div><div class="line">$ python3 helloworld.py         <span class="comment"># 运行.py文件</span></div></pre></td></tr></table></figure><h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><figure class="highlight ruby"><figcaption><span>helloworld.rb</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/ruby -w</span></div><div class="line">puts <span class="string">"Hello world!"</span>;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ ruby helloworld.rb            <span class="comment"># 运行.rb文件</span></div></pre></td></tr></table></figure><h2 id="Perl"><a href="#Perl" class="headerlink" title="Perl"></a>Perl</h2><figure class="highlight perl"><figcaption><span>helloworld.pl</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/perl</span></div><div class="line"><span class="keyword">print</span> <span class="string">"Helllo world!\n"</span>;</div></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ chmod 755 helloworld.pl       <span class="comment"># 修改.pl文件权限</span></div><div class="line">$ ./helloworld.pl               <span class="comment"># 运行.pl文件</span></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;code&gt;Markdown&lt;/code&gt;主要是为了方便写作而生的，编写完之后最终是转化为了&lt;code&gt;HTML&lt;/code&gt;文档，而且也是完全兼容&lt;code&gt;HTML&lt;/code&gt;格式文档，可以插入&lt;code&gt;HTML&lt;/code&gt;格式文档。整理&lt;code&gt;Markdown&lt;/code&gt;常用的标记语法。&lt;/p&gt;
+      &lt;p&gt;写一写，各种语言的“Hello world!”。&lt;/p&gt;
     
     </summary>
     
-      <category term="Memo" scheme="http://naijoug.com/categories/Memo/"/>
+      <category term="Program" scheme="http://naijoug.com/categories/Program/"/>
     
     
-      <category term="Markdown" scheme="http://naijoug.com/tags/Markdown/"/>
+      <category term="Basic" scheme="http://naijoug.com/tags/Basic/"/>
     
   </entry>
   

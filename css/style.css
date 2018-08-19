@@ -448,7 +448,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #1d1f21;
+  background-color: #303030;
   color: #c9cacc;
   font-weight: 400;
   font-size: 14px;
@@ -876,7 +876,7 @@ body {
   z-index: 5000000;
   width: 100%;
   border-top: 1px solid #666;
-  background: #212326;
+  background: #343434;
   transition: opacity 0.2s;
 }
 #footer-post a {
@@ -893,7 +893,7 @@ body {
 #footer-post #nav-footer {
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #323539;
+  background: #454545;
   text-align: center;
 }
 #footer-post #nav-footer a {
@@ -937,7 +937,7 @@ body {
 #footer-post #share-footer {
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #323539;
+  background: #454545;
   text-align: center;
 }
 #footer-post #share-footer ul {
@@ -957,7 +957,7 @@ body {
   clear: both;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: #323539;
+  background: #454545;
   text-align: left;
 }
 #footer-post #toc-footer ol {
@@ -1094,7 +1094,7 @@ article .content blockquote {
   margin: 1rem 10px;
   padding: 0.5em 10px;
   background: inherit;
-  color: #ccffb6;
+  color: #9acb9b;
   quotes: "\201C" "\201D" "\2018" "\2019";
   font-weight: bold;
 }
@@ -1103,7 +1103,7 @@ article .content blockquote p {
 }
 article .content blockquote:before {
   margin-right: 0.25em;
-  color: #ccffb6;
+  color: #9acb9b;
   content: "\201C";
   vertical-align: -0.4em;
   font-size: 2em;
@@ -1282,7 +1282,7 @@ article .content .caption {
   outline: none;
   border: solid 1px #ccc;
   border-radius: 5px;
-  background-color: #1d1f21;
+  background-color: #303030;
   color: #c9cacc;
   font-size: 1.2rem;
   -webkit-border-radius: 5px;
@@ -1412,7 +1412,7 @@ code {
   margin: 1rem 0;
   padding: 10px 15px;
   border-radius: 4px;
-  background: #212326;
+  background: #343434;
   font-family: "Menlo", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
 }
